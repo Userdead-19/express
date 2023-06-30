@@ -14,4 +14,7 @@ app.get('/hello',(req,res)=>{
     res.download("server.js")
 })
 
+app.get('/about',(req,res)=>{
+    res.send("about page")
+})
 app.listen(3000)
