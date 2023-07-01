@@ -17,4 +17,8 @@ app.get('/hello',(req,res)=>{
 app.get('/about',(req,res)=>{
     res.send("about page")
 })
+app.get('/log',(res,req)=>{
+    console.log("background process logged")
+})
+
 app.listen(3000)
